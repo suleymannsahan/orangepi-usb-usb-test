@@ -1,0 +1,14 @@
+[Unit]
+Description=USB Test Otomatik Izleyici
+After=multi-user.target
+ 
+[Service]
+Type=simple
+ExecStart=/root/usb_watch_service.sh
+Restart=always
+RestartSec=3
+User=root
+ 
+[Install]
+WantedBy=multi-user.target
+EOF
